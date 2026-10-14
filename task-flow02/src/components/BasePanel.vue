@@ -17,5 +17,6 @@
   box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 15px 25px;
   margin: 40px;
+  overflow-y: scroll;
 }
 </style>
