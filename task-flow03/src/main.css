@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.completed {
+  color: #999;
+  text-decoration: line-through;
+}

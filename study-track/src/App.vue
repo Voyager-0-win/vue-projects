@@ -25,7 +25,7 @@ const subjects = [
 ]
 let taskId = 0;
 
-const {total, completed, remaining, totalDuration} = useTaskStates(tasks.value);
+const {total, completed, remaining, totalDuration} = useTaskStates(tasks);
 
 
 function addTask(title, subject, duration) {

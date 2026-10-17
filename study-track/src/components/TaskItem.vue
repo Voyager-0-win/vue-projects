@@ -9,7 +9,7 @@ const emit = defineEmits(['toggle-task', 'remove-task'])
 </script>
 
 <template>
-  <li>
+  <div class="box">
     <div class="title" :class="{completed : done}">
       {{title}}
     </div>
@@ -21,11 +21,11 @@ const emit = defineEmits(['toggle-task', 'remove-task'])
     </div>
     <button @click="emit('toggle-task')">{{ done ? 'Uncomplete' : 'Complete' }}</button>
     <button @click="emit('remove-task')">Del</button>
-  </li>
+  </div>
 </template>
 
 <style scoped>
-li {
+.box {
   display: flex;
   max-width: 50%;
   justify-content: space-around;
