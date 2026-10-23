@@ -1,11 +1,12 @@
 <script setup>
 import { ref } from 'vue'
 const emit = defineEmits(['add-task'])
-const title = ref('Learn Astro')
+const title = ref('')
 function addTask() {
   const temp = title.value.trim()
   if (temp) {
     emit('add-task', temp)
+    title = ref('')
   } else {
     alert('input error!')
   }
